@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/dog.dart';
 import '../data/mock_data.dart';
 import '../widgets/dog_card.dart';
+import '../widgets/app_drawer.dart';
 import 'matches_screen.dart';
 import 'dart:math';
 
@@ -155,6 +156,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const AppDrawer(),
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
